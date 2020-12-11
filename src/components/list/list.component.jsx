@@ -48,7 +48,6 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
           <FontAwesomeIcon icon={faEdit} />
         </CustomButton>
       </div>
-      {/* Icons here */}
     </div>
   )) : <div className="flex justify-center opacity-50"> Your list is EMPTY</div>
 }
