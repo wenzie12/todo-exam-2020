@@ -29,8 +29,6 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     return <div></div>
   }
 
-  console.log(todos)
-
   return todos.length > 0 ? todos.map((todo, i) => (
     // this would be cleaner if the classes are grouped in an @apply Directive, but since it's not that bad, i'll just leave it like this.
     <div key={i} className={`${todo.isComplete ? 'line-through' : ''} flex items-center justify-between md:mx-32 lg:mx-60 px-5 mx-5 my-1 rounded bg-gray-200`}>
